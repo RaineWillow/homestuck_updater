@@ -2,13 +2,21 @@ import json
 
 class JsonReader():
 
-    def getServerKey(self):
-        key = {}
-        try:
-            files = open("../data.json")
-            key = json.load(files)
-            files.close()
-        except Exception as e:
-            print("Couldn't load json")
+	def __init__(self):
+		self.data = {}
+		try:
+			files = open("../data.json")
+			self.data = json.load(files)
+			files.close()
+		except Exception as e:
+			print("Couldn't load json")
+			print(e)
 
-        return key['token']
+	def getServerKey(self):
+		return self.data['token']
+
+	def getUrl(self):
+		return self.data['url']
+
+	def getData(self):
+		return self.data['data']

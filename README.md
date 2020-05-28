@@ -11,7 +11,7 @@ Initialize in any channel (make sure the bot has permission to post in it!) usin
 @bot ! init out
 ```
 
-Alternitavely, you can avoid outputting the most recent stored update by typing:
+Alternatively, you can avoid outputting the most recent stored update by typing:
 
 ```
 @bot ! init

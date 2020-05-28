@@ -6,7 +6,7 @@ from utils.json_reader import *
 def main(argv):
 	jsonLoader = JsonReader()
 
-	client = HomestuckUpdater(jsonLoader.getUrl(), jsonLoader.getData())
+	client = HomestuckUpdater()
 
 	client.run(jsonLoader.getServerKey())
 	return 0

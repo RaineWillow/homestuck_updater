@@ -17,7 +17,7 @@ Alternatively, you can avoid outputting the most recent stored update by typing:
 @bot ! init
 ```
 
-### Dependancies:
+### Dependencies:
 ```
 discord.py
 feedparser

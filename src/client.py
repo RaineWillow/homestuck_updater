@@ -46,7 +46,7 @@ class HomestuckUpdater(discord.Client):
 				if (feed['bozo'] == 1):
 					print(feed['bozo_exception'])
 
-				if (int(sorted_entries[0]['title']) != int(self.data['l_update_last'])):
+				if (int(sorted_entries[0]['title']) > int(self.data['l_update_last'])):
 					self.data['l_update_start'] = str(int(self.data['l_update_last']) + 1)
 					first_page_loc = 0 + (int(sorted_entries[0]['title']) - int(self.data['l_update_start']))
 
